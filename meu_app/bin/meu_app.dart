@@ -1,14 +1,18 @@
 import 'package:meu_app/meu_app.dart' as meu_app;
 
 void main(List<String> arguments) {
-  int numero1 = 10;
-  var numero2 = 11;
+  double numero1 = 10.1;
+  var numero2 = 11.1;
 
-  print("Retorna verdadeiro se e somente se esse inteiro for par");
-  print(numero1.isEven);
-  print(numero2.isEven);
+  print("Remove ponto flutuante");
+  print(numero1.truncate());
+  print(numero2.truncate());
 
-  print("Retorna verdadeiro se e somente se esse inteiro for impar");
-  print(numero1.isOdd);
-  print(numero2.isOdd);
+  print("Converte para inteiro: ");
+  print(numero1.toInt());
+  print(numero2.toInt());
+
+  print("Arredonda para cima!");
+  print(numero1.ceil());
+  print(numero2.ceil());
 }
