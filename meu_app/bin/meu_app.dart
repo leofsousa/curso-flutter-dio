@@ -1,10 +1,7 @@
 void main(List<String> arguments) {
-    print( fatorial(3));
+    print(soma(150, 200));
 }
 
-int fatorial(int numero){
-    if(numero == 1){
-        return 1;
-    }
-    return numero * fatorial(numero - 1);
-}
+void printData(String texto) => print (texto);
+    
+int soma(int number1, int number2) => number1 + number2;
